@@ -1,4 +1,4 @@
-package in.n4smh.microservices.people_shared.dto.model;
+package in.n4smh.microservices.person_shared.dto.model;
 
 import java.time.LocalDate;
 import java.time.Period;

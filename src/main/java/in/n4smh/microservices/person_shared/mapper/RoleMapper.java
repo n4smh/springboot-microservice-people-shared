@@ -1,10 +1,10 @@
-package in.n4smh.microservices.people_shared.mapper;
+package in.n4smh.microservices.person_shared.mapper;
 
 import org.apache.commons.lang3.ObjectUtils;
 import org.springframework.stereotype.Service;
 
-import in.n4smh.microservices.people_shared.dto.model.Role;
-import in.n4smh.microservices.people_shared.entity.RoleEntity;
+import in.n4smh.microservices.person_shared.dto.model.Role;
+import in.n4smh.microservices.person_shared.entity.RoleEntity;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
