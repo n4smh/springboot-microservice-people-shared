@@ -1,4 +1,4 @@
-package in.n4smh.microservices.people_shared.entity;
+package in.n4smh.microservices.person_shared.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

@@ -7,18 +7,17 @@
 	<parent>
 		<groupId>in.n4smh.microservices</groupId>
 		<artifactId>parent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.0.2-SNAPSHOT</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
 	<artifactId>person-shared</artifactId>
-	<version>${revision}</version>
-	<name>app-person-shared</name>
-	<description>Demo project for Spring Boot</description>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Person Shared</name>
+	<description>Shared elements of person service</description>
 
 	<properties>
 		<java.version>21</java.version>
-		<revision>0.0.1-SNAPSHOT</revision>
 	</properties>
 
 	<dependencies>
@@ -28,14 +27,16 @@
 		</dependency>
 	</dependencies>
 
-
 	<build>
 		<plugins>
+			<!-- DO NOT repackage as boot app -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
