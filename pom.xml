@@ -5,36 +5,38 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>in.n4smh.microservices</groupId>
-		<artifactId>parent</artifactId>
-		<version>0.0.2-SNAPSHOT</version>
+		<groupId>in.n4smh.microservices.person</groupId>
+		<artifactId>parent-pom</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>in.n4smh.microservices.person</groupId>
 	<artifactId>shared</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>PersonShared</name>
-	<description>Shared elements of person service</description>
+	<description>Shared elements of Person projects</description>
 
-	<properties>
-	</properties>
+	<properties/>
 
 	<dependencies>
 		<dependency>
 			<groupId>jakarta.persistence</groupId>
 			<artifactId>jakarta.persistence-api</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
 	</dependencies>
 
 	<build>
 		<plugins>
-			<!-- DO NOT repackage as boot app -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<skip>true</skip>
+					<skip>true</skip> <!-- DO NOT repackage as boot app -->
 				</configuration>
 			</plugin>
 		</plugins>
